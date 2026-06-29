@@ -1,9 +1,9 @@
 {
   "version": "2.0",
-  "dataset_id": "on006547",
-  "source": "openneuro",
-  "source_id": "ds006547",
+  "pipeline_stage": "validated",
   "title": "Visual EEG Study (BrainVision → BIDS)",
+  "license": "CC0",
+  "dataset_type": "raw",
   "authors": {
     "Sanaz Ghaffari": {},
     "Arian Yavari": {},
@@ -11,21 +11,57 @@
     "Arsalan Ghofrani": {},
     "Russell Butler": {}
   },
-  "license": "CC0",
-  "dataset_type": "raw",
   "related_identifiers": [
     {
       "identifier": "10.18112/openneuro.ds006547.v1.0.0",
       "identifier_type": "DOI",
-      "relation_type": "IsIdenticalTo"
+      "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/on006547",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/on006547",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
     }
   ],
-  "pipeline_stage": "seeded",
-  "bids_version": "1.9.0",
-  "recording_modality": [
+  "resource_type_general": "Dataset",
+  "modalities": [
     "eeg"
   ],
-  "datatypes": [
-    "eeg"
-  ]
+  "resource_type_specific": "EEG Dataset",
+  "sizes": [
+    "18.9 GB (94 files)"
+  ],
+  "formats": [
+    ".eeg",
+    ".json",
+    ".md",
+    ".tsv",
+    ".vhdr",
+    ".vmrk",
+    ".yml"
+  ],
+  "description": "This dataset comprises high-density electroencephalography (EEG) recordings acquired during a visual stimulation task. Raw data are organized according to the EEG-BIDS specification and stored in BrainVision format. The dataset represents a single session of data collection and serves as a resource for investigating neural responses to visual stimuli.",
+  "keywords": [
+    {
+      "term": "EEG"
+    },
+    {
+      "term": "visual stimulation"
+    },
+    {
+      "term": "electroencephalography"
+    },
+    {
+      "term": "high-density EEG"
+    },
+    {
+      "term": "BIDS"
+    }
+  ],
+  "source_hash": "928db4e52aee2084a31d55c221ea9d941d669c7ac239c744e86d602c5862498e"
 }
