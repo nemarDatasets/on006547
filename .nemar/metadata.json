@@ -2,6 +2,7 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Visual EEG Study (BrainVision → BIDS)",
+  "description": "This dataset comprises high-density electroencephalography (EEG) recordings acquired during a visual stimulation task from human participants. Data were collected in a single session and organized according to the EEG-BIDS specification, with raw recordings stored in BrainVision format. The dataset provides raw, unfiltered EEG signals suitable for subsequent offline preprocessing and analysis of visual evoked responses.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -11,6 +12,26 @@
     "Arsalan Ghofrani": {},
     "Russell Butler": {}
   },
+  "keywords": [
+    {
+      "term": "EEG"
+    },
+    {
+      "term": "visual evoked potentials"
+    },
+    {
+      "term": "BrainVision"
+    },
+    {
+      "term": "BIDS"
+    },
+    {
+      "term": "visual stimulation"
+    },
+    {
+      "term": "high-density EEG"
+    }
+  ],
   "related_identifiers": [
     {
       "identifier": "10.18112/openneuro.ds006547.v1.0.0",
@@ -29,10 +50,10 @@
     }
   ],
   "resource_type_general": "Dataset",
+  "resource_type_specific": "EEG Dataset",
   "modalities": [
     "eeg"
   ],
-  "resource_type_specific": "EEG Dataset",
   "sizes": [
     "18.9 GB (94 files)"
   ],
@@ -45,23 +66,6 @@
     ".vmrk",
     ".yml"
   ],
-  "description": "This dataset comprises high-density electroencephalography (EEG) recordings acquired during a visual stimulation task. Raw data are organized according to the EEG-BIDS specification and stored in BrainVision format. The dataset represents a single session of data collection and serves as a resource for investigating neural responses to visual stimuli.",
-  "keywords": [
-    {
-      "term": "EEG"
-    },
-    {
-      "term": "visual stimulation"
-    },
-    {
-      "term": "electroencephalography"
-    },
-    {
-      "term": "high-density EEG"
-    },
-    {
-      "term": "BIDS"
-    }
-  ],
+  "methods_description": "EEG data were recorded using BrainVision hardware (.vhdr/.vmrk/.eeg files) during a visual stimulation task in a single session (ses-01). No acquisition-time filters were applied; the dataset represents raw data prior to offline preprocessing.",
   "source_hash": "928db4e52aee2084a31d55c221ea9d941d669c7ac239c744e86d602c5862498e"
 }
