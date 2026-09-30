@@ -2,7 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Visual EEG Study (BrainVision → BIDS)",
-  "description": "This dataset comprises high-density electroencephalography (EEG) recordings acquired during a visual stimulation task from human participants. Data were collected in a single session and organized according to the EEG-BIDS specification, with raw recordings stored in BrainVision format. The dataset provides raw, unfiltered EEG signals suitable for subsequent offline preprocessing and analysis of visual evoked responses.",
+  "description": "This dataset contains high-density EEG recordings collected during a visual stimulation task. Data were converted from BrainVision format (.vhdr/.vmrk/.eeg) to the EEG-BIDS specification, with a single session per participant. No acquisition-time filters or offline preprocessing are included.",
+  "methods_description": "High-density EEG was recorded with a BrainVision system during a visual stimulation task. Raw BrainVision files were converted to EEG-BIDS with a helper script, and no offline preprocessing was applied.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -17,19 +18,18 @@
       "term": "EEG"
     },
     {
-      "term": "visual evoked potentials"
+      "term": "visual stimulation"
     },
     {
-      "term": "BrainVision"
+      "term": "high-density EEG"
     },
     {
       "term": "BIDS"
     },
     {
-      "term": "visual stimulation"
-    },
-    {
-      "term": "high-density EEG"
+      "term": "Evoked Potentials, Visual",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D005074"
     }
   ],
   "related_identifiers": [
@@ -55,7 +55,7 @@
     "eeg"
   ],
   "sizes": [
-    "18.9 GB (94 files)"
+    "17.62 GB (94 files)"
   ],
   "formats": [
     ".eeg",
@@ -66,6 +66,5 @@
     ".vmrk",
     ".yml"
   ],
-  "methods_description": "EEG data were recorded using BrainVision hardware (.vhdr/.vmrk/.eeg files) during a visual stimulation task in a single session (ses-01). No acquisition-time filters were applied; the dataset represents raw data prior to offline preprocessing.",
   "source_hash": "928db4e52aee2084a31d55c221ea9d941d669c7ac239c744e86d602c5862498e"
 }
